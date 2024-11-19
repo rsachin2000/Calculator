@@ -132,7 +132,7 @@ function click_equal(){
 function clear_fun(){
     s='';
     ans='';
-    document.querySelector('#input').innerText=s;
+    document.querySelector('#input').innerText='Hello priyanka you are beutiful 🥰';
     document.querySelector('#output').innerText=ans;
 }
 
