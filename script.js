@@ -2,72 +2,104 @@ let s="";
 let ans="";
 let Input=document.querySelector('#input');
 let Output=document.querySelector('#output');
-function click_1(){
-   s+=1;
-   Input.innerText=s;
-  
-}
-function click_2(){
-    s+=2;
-    Input.innerText=s;
+
+function click_btn(val){
+
+    if(val===1){
+        
+        if(s.length===0){
+            Output.innerText="";
+        }
+        s+=1;
+        Input.innerText=s;
+    }else if(val===2){
+       if(s.length===0){
+            Output.innerText="";
+        }
+        s+=2;
+        Input.innerText=s;
+    }else if(val===3){
+        if(s.length===0){
+            Output.innerText="";
+        }
+        s+=3;
+        Input.innerText=s;
+    }else if(val===4){
+        if(s.length===0){
+            Output.innerText="";
+        }
+        s+=4;
+        Input.innerText=s;
+    }else if(val===5){
+        if(s.length===0){
+            Output.innerText="";
+        }
+        s+=5;
+        Input.innerText=s;
+    }else if(val===6){
+        if(s.length===0){
+            Output.innerText="";
+        }
+        s+=6;
+        Input.innerText=s;
+    }else if(val===7){
+        if(s.length===0){
+            Output.innerText="";
+        }
+        s+=7;
+        Input.innerText=s;
+    }else if(val===8){
+        if(s.length===0){
+            Output.innerText="";
+        }
+        s+=8;
+        Input.innerText=s;
+    }else if(val===9){
+        if(s.length===0){
+            Output.innerText="";
+        }
+        s+=9;
+        Input.innerText=s;
+    }else if(val===0){
+        if(s.length===0){
+            Output.innerText="";
+        }
+        s+=0;
+        Input.innerText=s;
+    }else if(val==='.'){
+        if(s.length===0){
+            Output.innerText="";
+        }
+        s+='.';
+        Input.innerText=s;
+    }else if(val==='+'){
+        if(s.length===0){
+            Output.innerText="";
+        }
+        s+='+';
+        Input.innerText=s;
+    }else if(val==='-'){
+        if(s.length===0){
+            Output.innerText="";
+        }
+        s+='-';
+        Input.innerText=s;
+    }else if(val==='*'){
+        if(s.length===0){
+            Output.innerText="";
+        }
+        s+='×';
+        Input.innerText=s;
     
-}
-function click_3(){
-    s+=3;
-    Input.innerText=s;
-   
-}
-function click_4(){
-    s+=4;
-    Input.innerText=s;
-    
-}
-function click_5(){
-    s+=5;
-    Input.innerText=s;
-}
-function click_6(){
-    s+=6;
-    Input.innerText=s;
-}
-function click_7(){
-    s+=7;
-    Input.innerText=s;
-}
-function click_8(){
-    s+=8;
-    Input.innerText=s;
-}
-function click_9(){
-    s+=9;
-    Input.innerText=s;
-}
-function click_0(){
-    s+=0;
-    Input.innerText=s;
-}
-function click_point(){
-    s+='.';
-    Input.innerText=s;
-}
-function click_plus(){
-    s+='+';
-    Input.innerText=s;
-}
-function click_minus(){
-    s+='-';
-    Input.innerText=s;
-    
+    }else if(val==='/'){
+        if(s.length===0){
+            Output.innerText="";
+        }
+        s+='÷';
+        Input.innerText=s;
+    }
 }
 
-function click_mul(){
-    s+='×';
-    Input.innerText=s;
-}
-function click_dev(){
-    s+='÷';
-    Input.innerText=s;
-}
 
 function click_equal(){
     
@@ -75,7 +107,7 @@ function click_equal(){
     let temp_s2=s;
     let n=temp_s.length;
     const check_validity=(temp_s)=>{
-         if(temp_s[n-1]==="*" || temp_s[n-1]==="/"|| temp_s[n-1]==="+" ||temp_s[n-1]==="-" ){
+         if(temp_s[n-1]==="*" || temp_s[n-1]==="/"|| temp_s[n-1]==="+" ||temp_s[n-1]==="-" ||temp_s[n-1]==="."){
             return false;
          }
          else return true;
@@ -85,7 +117,7 @@ function click_equal(){
         ans=eval(temp_s);
         Output.innerText=ans;
         s="";
-        Input.innerText()
+        Input.innerText="";
         
     }
     else{
@@ -108,4 +140,6 @@ function delete_fun(){
     s=s.substring(0,s.length-1);
     Input.innerText=s;
 }
+
+
 
