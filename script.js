@@ -102,7 +102,7 @@ function click_btn(val){
 
 
 function click_equal(){
-    
+    if(s.length===0) Output.innerText=ans;
     let temp_s = s.replace("×", "*").replace("÷", "/");
     let temp_s2=s;
     let n=temp_s.length;
