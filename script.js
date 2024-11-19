@@ -4,7 +4,7 @@ let Input=document.querySelector('#input');
 let Output=document.querySelector('#output');
 
 function click_btn(val){
-
+    
     if(val===1){
         
         if(s.length===0){
@@ -102,11 +102,11 @@ function click_btn(val){
 
 
 function click_equal(){
-     if(s.length===0){
+    
+    if(s.length===0){
          Output.innerText=ans;
          return;
     }
-    if(s.length===0) Output.innerText=ans;
     let temp_s = s.replace("×", "*").replace("÷", "/");
     let temp_s2=s;
     let n=temp_s.length;
@@ -144,6 +144,4 @@ function delete_fun(){
     s=s.substring(0,s.length-1);
     Input.innerText=s;
 }
-
-
 
